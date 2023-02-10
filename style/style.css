@@ -12,6 +12,9 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
 }
+h1, h2, h3, h4, .title{
+    text-transform: capitalize;
+}
 .section-title{
     padding: 0 1em;
     margin: 1em 0 ;
@@ -24,6 +27,7 @@ body{
 .port-item{
     /* display: inline; */
     /* width: 200px; */
+    max-width: 220px;
     cursor: pointer;
     min-height: 270px;
     background-color: #ccc;
@@ -47,11 +51,19 @@ body{
     margin-bottom: 10px;
     border-bottom: solid 1px;
 }
-.port-item img {
+.port-item img{
     border: 1px solid #ddd; /* Gray border */
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
     width: 150px; /* Set a small width */
+}
+.port-item .bg {
+
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
   }
   .port-item .tags span{
       border: solid 1px;
